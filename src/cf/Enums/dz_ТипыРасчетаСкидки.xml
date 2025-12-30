@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="25ef168a-7f0b-4690-9002-7bc50180bba9">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.dz_ТипыРасчетаСкидки" category="Ref">
+				<xr:TypeId>510a76fb-084c-4d3a-a9e3-1dd68e69376a</xr:TypeId>
+				<xr:ValueId>59951af9-7f49-4ca5-bf03-d2f063cb2303</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.dz_ТипыРасчетаСкидки" category="Manager">
+				<xr:TypeId>af6a284d-e7bf-4ec1-bf7a-4234e84732a0</xr:TypeId>
+				<xr:ValueId>51638fd7-98f7-442e-bc94-2f034e947a3b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.dz_ТипыРасчетаСкидки" category="List">
+				<xr:TypeId>4a75de6e-11ea-49f0-a712-25655b7828f3</xr:TypeId>
+				<xr:ValueId>050f489a-5a69-4a05-83b7-4888029f644e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>dz_ТипыРасчетаСкидки</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Типы расчета скидки</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="f344a82c-d162-4331-8b48-05f56498bb9e">
+				<Properties>
+					<Name>ПоКартеЛояльности</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По карте лояльности</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="cf28e15a-439a-4ef7-b162-28b6114c7bc9">
+				<Properties>
+					<Name>Фиксированная</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фиксированная</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

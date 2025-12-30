@@ -1,0 +1,39 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+' LAYOUT_WITH_LEGEND()
+
+title Учет скидок: Архитектура
+
+Person(SalesManager, Менеджер по продажам)
+Person(Marketer, Маркетолог)
+
+' Системы
+System_Boundary(1S_ERP, "1С: ERP") {
+    Container(1S_ERP_NSI, "Учет НСИ")
+    Container(1S_ERP_Sales, "Продажи"){
+        Component(1S_ERP_Sales_Sales_Document, "док. Расход товара",, "")
+    }     
+    Container(1S_ERP_Discounts, "Учет скидок"){
+        Component(1S_ERP_Discounts_Discounts_Document, "док. Установка скидок",, "")
+    }  
+}
+
+System_Boundary(1S_MDM, "1С: MDM") {
+    Container(1S_MDM_NSI, "Учет НСИ")
+}
+
+System_Ext(ESB, "Шина ESB")  
+
+' Связи
+Rel(ESB, 1S_ERP_NSI, "спр. Номенклатура, https")
+Rel(1S_MDM_NSI, ESB, "спр. Номенклатура, https")
+Rel(1S_ERP_Sales, 1S_ERP_Discounts, "Объем продаж")
+Rel(1S_ERP_Discounts, 1S_ERP_Sales, "Активные скидки и их значения")
+Rel(SalesManager, 1S_ERP_Sales, "док. Расход товара, https")
+Rel(Marketer, 1S_ERP_Discounts, "док. Установка скидок, https")
+
+
+@enduml

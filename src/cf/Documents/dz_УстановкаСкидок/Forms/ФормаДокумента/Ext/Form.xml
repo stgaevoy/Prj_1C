@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ЛеваяКолонка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Левая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ЛеваяКолонкаРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<InputField name="Номер" id="5">
+							<DataPath>Объект.Number</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НомерКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="7"/>
+						</InputField>
+						<InputField name="Скидка" id="11">
+							<DataPath>Объект.Скидка</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СкидкаКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="СкидкаРасширеннаяПодсказка" id="13"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПраваяКолонка" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правая колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПраваяКолонкаРасширеннаяПодсказка" id="18"/>
+					<ChildItems>
+						<InputField name="Дата" id="8">
+							<DataPath>Объект.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="10"/>
+						</InputField>
+						<InputField name="ПериодДействияНачало" id="14">
+							<DataPath>Объект.ПериодДействияНачало</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПериодДействияНачалоКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ПериодДействияНачалоРасширеннаяПодсказка" id="16"/>
+						</InputField>
+						<InputField name="ПериодДействияКонец" id="19">
+							<DataPath>Объект.ПериодДействияКонец</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПериодДействияКонецКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ПериодДействияКонецРасширеннаяПодсказка" id="21"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ПорогПримененияСкидки" id="28">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ПорогПримененияСкидки</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПорогПримененияСкидкиКонтекстноеМеню" id="29"/>
+			<AutoCommandBar name="ПорогПримененияСкидкиКоманднаяПанель" id="30"/>
+			<ExtendedTooltip name="ПорогПримененияСкидкиРасширеннаяПодсказка" id="31"/>
+			<SearchStringAddition name="ПорогПримененияСкидкиСтрокаПоиска" id="32">
+				<AdditionSource>
+					<Item>ПорогПримененияСкидки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПорогПримененияСкидкиСтрокаПоискаКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ПорогПримененияСкидкиСтрокаПоискаРасширеннаяПодсказка" id="34"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПорогПримененияСкидкиСостояниеПросмотра" id="35">
+				<AdditionSource>
+					<Item>ПорогПримененияСкидки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПорогПримененияСкидкиСостояниеПросмотраКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ПорогПримененияСкидкиСостояниеПросмотраРасширеннаяПодсказка" id="37"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПорогПримененияСкидкиУправлениеПоиском" id="38">
+				<AdditionSource>
+					<Item>ПорогПримененияСкидки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПорогПримененияСкидкиУправлениеПоискомКонтекстноеМеню" id="39"/>
+				<ExtendedTooltip name="ПорогПримененияСкидкиУправлениеПоискомРасширеннаяПодсказка" id="40"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПорогПримененияСкидкиНомерСтроки" id="41">
+					<DataPath>Объект.ПорогПримененияСкидки.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПорогПримененияСкидкиНомерСтрокиКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ПорогПримененияСкидкиНомерСтрокиРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<InputField name="ПорогПримененияСкидкиНижняяГраницаПорога" id="44">
+					<DataPath>Объект.ПорогПримененияСкидки.НижняяГраницаПорога</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПорогПримененияСкидкиНижняяГраницаПорогаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПорогПримененияСкидкиНижняяГраницаПорогаРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ПорогПримененияСкидкиЗначениеСкидки" id="47">
+					<DataPath>Объект.ПорогПримененияСкидки.ЗначениеСкидки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПорогПримененияСкидкиЗначениеСкидкиКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ПорогПримененияСкидкиЗначениеСкидкиРасширеннаяПодсказка" id="49"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.dz_УстановкаСкидок</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
